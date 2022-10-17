@@ -77,7 +77,7 @@ function CreatePost() {
           id="title"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
-          placeholder="24 caracteres maximums"
+          placeholder="24 caractères maximum"
         />
         <div className="text-primary title error"></div>
         <br />

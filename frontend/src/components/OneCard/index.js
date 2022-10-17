@@ -110,7 +110,7 @@ function OneCard(props) {
             {user._id === post.userId || user.isAdmin === true ? (
               <>
                 <button className="btn btn-tertiary me-2" onClick={editPost}>
-                  Editer le post
+                  Modifier le post
                 </button>
                 <button
                   className="btn btn-primary text-light"
