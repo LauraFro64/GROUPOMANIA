@@ -33,6 +33,7 @@ const SignUpForm = () => {
           email,
           password,
         },
+        
       })
         .then((res) => {
           window.location = "/profil";

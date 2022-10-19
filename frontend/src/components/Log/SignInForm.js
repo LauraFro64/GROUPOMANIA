@@ -7,11 +7,13 @@ const SignInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const emailError = document.querySelector(".email.error");
+  const passwordError = document.querySelector(".password.error");
+
+
   const handleLogin = async (e) => {
     e.preventDefault();
-    const emailError = document.querySelector(".email.error");
-    const passwordError = document.querySelector(".password.error");
-
+    
     await axios({
       method: "post",
       url: `http://localhost:5000/api/user/signin`,
@@ -26,8 +28,8 @@ const SignInForm = () => {
       })
       .catch((err) => {
         console.log(err);
-        emailError.innerHTML = err.response.data.error.email;
-        passwordError.innerHTML = err.response.data.error.password;
+        emailError.innerHTML = err.response.data.error;
+        passwordError.innerHTML = err.response.data.error;
       });
   };
 
@@ -57,7 +59,6 @@ const SignInForm = () => {
 
           <br />
 
-
           <label className="form-label" htmlFor="password">
             Mot de passe
           </label>
@@ -72,7 +73,6 @@ const SignInForm = () => {
           />
           <div className="text-danger password error"></div>
           <br />
-
 
           <div className="text-center">
             <input
