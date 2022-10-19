@@ -11,7 +11,7 @@ function NavBar() {
   const [user, setUser] = useState("");
   const admin = <FontAwesomeIcon icon={faLockOpen} />;
 
-  // GetUser = récupère les tertiaryrmations de l'utilisateur
+  // GetUser = récupère les informations de l'utilisateur
   useEffect(() => {
     axios({
       method: "get",

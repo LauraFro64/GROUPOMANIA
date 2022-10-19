@@ -3,7 +3,7 @@ const passwordValidator = require('password-validator');
 const passwordSchema = new passwordValidator();
 
 passwordSchema 
-.is().min(4)          // Minimum de 4 caractères requis
+.is().min(6)          // Minimum de 6 caractères requis
 .is().max(30)         // Maximum de 30 caractères autorisés
 .has().uppercase()    // Doit contenir au moins une majuscule
 .has().lowercase()    // Doit contenir au moins une minuscule

@@ -1,3 +1,5 @@
+// S'inscrire
+
 import React, { useState } from "react";
 import axios from "axios";
 
@@ -59,53 +61,58 @@ const SignUpForm = () => {
           <input
             type="text"
             name="pseudo"
-            className="form-control form-control"
+            className="form-control"
             id="pseudo"
             onChange={(e) => setPseudo(e.target.value)}
             value={pseudo}
             placeholder="Minimum 4 caractères"
           />
-          <br/>
           <div className="text-primary pseudo error"></div>
+          <br />
+
           <label className="form-label" htmlFor="email">
             Email
           </label>
           <input
             type="email"
             name="email"
-            className="form-control form-control"
+            className="form-control"
             id="email"
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder="nom@email.com"
           />
-          <br/>
-          <div className="text-primary email error"></div>
+          <div className="text-danger email error"></div>
+          <br />
+
           <label className="form-label" htmlFor="password">
             Mot de passe
           </label>
           <input
             type="password"
             name="password"
-            className="form-control form-control"
+            className="form-control"
             id="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
+            placeholder="6 caractères minimum incluant 1 majuscule et 1 chiffre"
           />
-          <br/>
-          <div className="text-primary password error"></div>
+          <div className="text-danger password error"></div>
+          <br />
+
           <label className="form-label" htmlFor="password-conf">
             Confirmation du mot de passe
           </label>
           <input
             type="password"
             name="password"
-            className="form-control form-control"
+            className="form-control"
             id="password-conf"
             onChange={(e) => setControlPassword(e.target.value)}
             value={controlPassword}
           />
-          <div className="password-confirm error p-2 text-danger"></div>
+          <div className="password-confirm error text-danger"></div>
+          
           <div className="mt-4 text-center">
             <input
               className="col-3 btn btn-success mb-3 text-light"

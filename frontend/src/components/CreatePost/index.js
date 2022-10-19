@@ -44,7 +44,6 @@ function CreatePost() {
         "Content-Type": "multipart/form-data",
         Authorization: `Bearer ${token}`,
       },
-      // Tricks pour contourner le bug axios V0.25
       transformRequest: (data, headers) => {
         return formData;
       },
