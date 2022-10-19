@@ -38,7 +38,7 @@ function NavBar() {
               Bienvenue {user.pseudo}{" "}
               {user.isAdmin === true ? <> {admin} </> : null}
             </h3>
-            <NavLink className="btn btn-tertiary mx-2" to="/create">
+            <NavLink className="btn btn-info mx-2" to="/create">
               Poster une publication
             </NavLink>
             <Logout />

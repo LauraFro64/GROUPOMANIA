@@ -28,7 +28,7 @@ function Edit(props) {
     }
   });
 
-  //Get Post tertiaryrmations
+  //Get Post informations
   useEffect(() => {
     if (!post) {
       axios({

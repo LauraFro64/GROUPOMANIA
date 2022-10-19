@@ -20,7 +20,7 @@ function OneCard(props) {
   const token = localStorage.getItem("token");
   const [user, setUser] = useState("");
 
-  //GetUser tertiaryrmations
+  //GetUser informations
   useEffect(() => {
     if (!user) {
       axios({
@@ -37,7 +37,7 @@ function OneCard(props) {
     }
   });
 
-  //Get Post tertiaryrmations
+  //Get Post informations
   useEffect(() => {
     if (!post) {
       axios({
@@ -79,7 +79,7 @@ function OneCard(props) {
     <>
       <div className="">
         <div className="col-lg-9 mx-auto card mt-5 shadow" key={post._id}>
-          <h3 className="card-header text-center bg-tertiary">{post.title}</h3>
+          <h3 className="card-header text-center bg-info">{post.title}</h3>
 
           <div className="row g-0 m-2">
             <div className="col-md-8">
@@ -109,7 +109,7 @@ function OneCard(props) {
             </span>
             {user._id === post.userId || user.isAdmin === true ? (
               <>
-                <button className="btn btn-tertiary me-2" onClick={editPost}>
+                <button className="btn btn-info me-2" onClick={editPost}>
                   Modifier le post
                 </button>
                 <button

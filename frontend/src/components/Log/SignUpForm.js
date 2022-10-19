@@ -63,9 +63,9 @@ const SignUpForm = () => {
             name="pseudo"
             className="form-control"
             id="pseudo"
+            required
             onChange={(e) => setPseudo(e.target.value)}
             value={pseudo}
-            placeholder="Minimum 4 caractères"
           />
           <div className="text-primary pseudo error"></div>
           <br />
@@ -78,6 +78,7 @@ const SignUpForm = () => {
             name="email"
             className="form-control"
             id="email"
+            required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder="nom@email.com"

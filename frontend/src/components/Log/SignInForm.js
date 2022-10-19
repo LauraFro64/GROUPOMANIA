@@ -48,6 +48,7 @@ const SignInForm = () => {
             name="email"
             className="form-control"
             id="email"
+            required
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             placeholder="nom@email.com"
@@ -55,6 +56,7 @@ const SignInForm = () => {
           <div className="text-danger email error"></div>
 
           <br />
+
 
           <label className="form-label" htmlFor="password">
             Mot de passe
@@ -70,6 +72,7 @@ const SignInForm = () => {
           />
           <div className="text-danger password error"></div>
           <br />
+
 
           <div className="text-center">
             <input

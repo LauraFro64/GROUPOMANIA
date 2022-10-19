@@ -87,7 +87,7 @@ function Post() {
         .map((post) => {
           return (
             <div className="col-lg-8 mx-auto card mt-5 shadow" key={post._id}>
-              <h3 className="card-header text-center bg-tertiary">{post.title}</h3>
+              <h3 className="card-header text-center bg-info">{post.title}</h3>
 
               <div className="row g-0 m-2">
                 <div className="col-md-12">
@@ -122,13 +122,13 @@ function Post() {
                 {user === true ? (
                   <>
                     <button
-                      className="btn btn-tertiary me-1"
+                      className="btn btn-info me-1"
                       onClick={like(post._id)}
                     >
                       {post.likes} {heart}
                     </button>
                     <button
-                      className="btn btn-tertiary me-1"
+                      className="btn btn-info me-1"
                       onClick={dislike(post._id)}
                     >
                       {post.dislikes} {disheart}
