@@ -10,7 +10,7 @@ Tapez `npm install` pour installer les dépendances
 Puis lancez le serveur en tapant la commande : `nodemon server.js` pour une MAJ automatique à chaque modification
 
 ## Groupomania - Frontend
-Depuis le fichier frontend :
+Depuis le dossier frontend :
 Tapez `npm install` pour installer les dépendances 
 Puis lancez le serveur en tapant la commande `npm start` 
 Rendez-vous sur `http://localhost:3000/`.

@@ -95,7 +95,7 @@ function Edit(props) {
           id="title"
           onChange={(e) => setTitle(e.target.value)}
           value={title}
-          placeholder="24 caractères maximum"
+          placeholder="60 caractères maximum"
         />
         <div className="text-primary title error"></div>
         <br />

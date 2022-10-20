@@ -95,6 +95,7 @@ const SignUpForm = () => {
             name="password"
             className="form-control"
             id="password"
+            required
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             placeholder="6 caractères minimum incluant 1 majuscule et 1 chiffre"

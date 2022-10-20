@@ -25,7 +25,7 @@ module.exports.postErrors = (err) => {
   let errors = { length: "" };
 
   if (err.message.includes("Post"))
-    errors.length = "Le titre ne doit pas dépasser 60 caracteres";
+    errors.length = "Le titre ne doit pas dépasser 60 caractères";
 
   return errors;
 };
