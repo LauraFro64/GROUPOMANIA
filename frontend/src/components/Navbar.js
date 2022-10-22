@@ -24,7 +24,7 @@ function NavBar() {
         setUser(res.data);
       })
       .catch((err) => console.log(err));
-  });
+  },[]);
 
   return (
     <div className="container-fluid">

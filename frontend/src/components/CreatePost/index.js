@@ -25,7 +25,7 @@ function CreatePost() {
         })
         .catch((err) => console.log(err));
     }
-  });
+  },[]);
 
   const handleCreate = async (e) => {
     e.preventDefault();

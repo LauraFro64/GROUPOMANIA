@@ -27,7 +27,7 @@ function Edit(props) {
         })
         .catch((err) => console.log(err));
     }
-  });
+  },[]);
 
   //Get Post informations
   useEffect(() => {
@@ -44,7 +44,7 @@ function Edit(props) {
 
         .catch((err) => console.log(err));
     }
-  });
+  },[]);
 
   const handleEdit = async (e) => {
     e.preventDefault();

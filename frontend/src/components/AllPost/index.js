@@ -43,7 +43,7 @@ function Post() {
       .catch((err) => {
         console.log(err);
       });
-  });
+  },[]);
 
   //Fonction Like
   const like = (props) => async () => {
