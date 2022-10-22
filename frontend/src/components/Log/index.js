@@ -22,8 +22,8 @@ const Log = ( props ) => {
         <div>
             <div >
                 <ul className="d-flex justify-content-center mt-5">
-                    <li  onClick={handleModals} id="register" className={signUpModal?"active-btn btn btn-primary me-2 text-light" : "btn btn-secondary me-2"}>S'inscrire</li>
-                    <li  onClick={handleModals} id="login" className={signInModal?"active-btn btn btn-primary me-2 text-light" : "btn btn-secondary me-2"}>Se connecter</li>
+                    <li  onClick={handleModals} id="register" className={signUpModal?"active-btn btn btn-info border-success me-2" : "btn btn-secondary me-2"}>S'inscrire</li>
+                    <li  onClick={handleModals} id="login" className={signInModal?"active-btn btn btn-info border-success me-2 " : "btn btn-secondary me-2"}>Se connecter</li>
                 </ul>
             </div>
                 {signUpModal && <SignUpForm />}

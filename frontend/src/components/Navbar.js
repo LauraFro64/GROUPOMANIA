@@ -44,7 +44,7 @@ function NavBar() {
             <Logout />
           </div>
         ) : (
-          <NavLink className="btn btn-primary text-light mx-2" to="/profil">
+          <NavLink className="btn btn-primary text-light mx-2" to="/connexion">
             {" "}
             Connexion / Inscription
           </NavLink>

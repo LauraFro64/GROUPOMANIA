@@ -17,6 +17,9 @@ const SignInForm = () => {
     await axios({
       method: "post",
       url: `http://localhost:5000/api/user/signin`,
+      headers: {
+        "Content-Type": "application/json",
+      },
       data: {
         email,
         password,

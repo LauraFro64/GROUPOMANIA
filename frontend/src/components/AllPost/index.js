@@ -11,6 +11,8 @@ export const timestampParser = (num) => {
     year: "numeric",
     month: "short",
     day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
   };
 
   let date = new Date(num).toLocaleDateString("fr-FR", options);

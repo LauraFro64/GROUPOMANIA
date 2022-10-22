@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { NavLink } from "react-router-dom";
 
 function Edit(props) {
   const [post, setPost] = useState("");
@@ -125,12 +126,17 @@ function Edit(props) {
           onChange={(e) => setFile(e.target.files[0])}
         />
         <br />
-        <div className="text-center">
-          <input
-            className="btn btn-success "
-            type="submit"
-            value="Valider les modifications"
-          />
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <div className="text-center">
+            <input
+              className="btn btn-success "
+              type="submit"
+              value="Valider les modifications"
+            />
+          </div>
+          <NavLink className="btn btn-primary text-light mx-2" to="/">
+            Retour
+          </NavLink>
         </div>
       </form>
     </div>

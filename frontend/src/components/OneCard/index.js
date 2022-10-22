@@ -98,7 +98,7 @@ function OneCard(props) {
 
           <div className="card-footer d-flex flex-row bg-secondary">
             <NavLink className="btn btn-success text-light my-auto" to="/">
-              Voir toutes les publications
+              Retour
             </NavLink>
             <p className="fst-italic text-light fs-6 m-auto">
               {" "}
@@ -110,13 +110,13 @@ function OneCard(props) {
             {user._id === post.userId || user.isAdmin === true ? (
               <>
                 <button className="btn btn-info me-2" onClick={editPost}>
-                  Modifier le post
+                  Modifier
                 </button>
                 <button
                   className="btn btn-primary text-light"
                   onClick={supprPost}
                 >
-                  Supprimer le post
+                  Supprimer
                 </button>
               </>
             ) : null}
